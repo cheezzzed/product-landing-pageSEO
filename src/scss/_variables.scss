@@ -1,0 +1,22 @@
+/* 0. Breakpoints ==================================== */
+// Small tablets and large smartphones (landscape view)
+
+$breakpoint-phone: 576px;
+
+// Small tablets (portrait view)
+
+$breakpoint-tablet: 768px;
+
+// Tablets and small desktops
+
+$breakpoint-desktop: 992px;
+
+// Large tablets and desktops
+
+$breakpoint-xl: 1200px;
+
+/* 1. Colors ========================================= */
+
+$dark-grey: #333;
+$light-grey: #444;
+$overlay: rgba(0, 0, 0, 0.7);

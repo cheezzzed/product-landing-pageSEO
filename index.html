@@ -6,61 +6,105 @@
 		<title>¯\_(ツ)_/¯</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+		<script src="https://kit.fontawesome.com/0cbe42c58b.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="dist/css/main.css" />
-
-		<!--
-			Do I work in src or dist? Good question.
-
-			First of all, if you're a newbie and you don't want to worry about any of this
-			Prepros or Gulp stuff, or scss, or browser-syncing, just do everything in dist.
-			In fact, just delete the src folder.
-
-			If you're a geek and want to get into it, here's some background...
-
-			Prepros and Gulp do mostly the same things. Prepros is a GUI (it's pretty),
-			Gulp is a CLI (it's in the terminal, and it's ugly).
-
-			Both will watch your files, and where appropriate, they will error-check and
-			compile them from one format to another. To stay organized, we have to
-			split things up between the files we write: the *source* files in "src";
-			and the files they become: the files that get *distributed* on the web, in "dist".
-
-			So src/scss files become dist/css files,
-			And src/js files become dist/js files (that have been compiled down to ES5),
-			And src/img files become dist/img files (that have been compressed for you).
-
-			Anything that doesn't need compiling/compressing/error-checking (plugins, video, fonts, etc),
-			just put straight in *dist*.
-
-			One way to remember it is: you're only going to distribute *dist*. You keep the source files
-			to yourself, hidden from the world.
-
-			Go here to learn more about src and dist:
-				https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders
-			Or here for detailed instructions on setting up the gulp command line helper.
-				https://github.com/CreativeCircus/circus-starter
-
-			- Chris Silich
-		-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
-		<div class="floating-box">
-			<img class="logo" src="dist/img/logo.png" alt="Circus Logo" />
-			<div class="foreground">
-				<h1>Hello World!</h1>
-				<p>Yep, you've got the Circus Starter project working.</p>
-				<p>Congratulations! You're ready to code.</p>
-				<p class="github">
-					<a target="_blank" rel="noopener" href="https://github.com/CreativeCircus/circus-starter"
-						>https://github.com/CreativeCircus/circus-starter</a
-					>
-				</p>
-				<code>1.10.0</code>
+		<nav class="navbar">
+			<div class="container">
+				<h1 class="logo">Nike</h1>
+				<ul class="nav">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+				</ul>
 			</div>
-			<div class="background"></div>
-		</div>
+		</nav>
+
+		<section class="section-a">
+			<div class="container">
+				<div>
+					<h1>Men's Soccer Cleats & Shoes</h1>
+					<p>Best quality cleats & shoes out there!</p>
+					<a href="" class="btn">Read More</a>
+				</div>
+				<img src="/dist/img/main-cleats.webp" alt="">
+			</div>
+		</section>
+
+		<section class="section-b">
+			<div class="overlay">
+				<div class="section-b-inner">
+					<h3>NEW MARKDOWNS: UP TO 40% OFF</h3>
+					<h2>FREE SHIPPING + RETURNS, FREE MEMBERSHIP, EXCLUSIVE PRODUCTS</h2>
+					<p>Find all the latest and greatest cleats here at Nike!</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-c">
+			<div class="gallery">
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-1.webp" alt=""></a>
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-2.webp" alt=""></a>
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-3.webp" alt=""></a>
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-4.webp" alt=""></a>
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-5.webp" alt=""></a>
+				<a href="" class="big"><img src="/dist/img/gallery-cleats-6.webp" alt=""></a>
+			</div>
+		</section>
+
+		<footer class="section-footer">
+			<div class="container">
+				<div>
+					<h2>Socials</h2>
+					<a href="http://twitter.com">
+						<i class="fab fa-twitter fa-2x"></i>
+					</a>
+					<a href="http://facebook.com">
+						<i class="fab fa-facebook fa-2x"></i>
+					</a>
+					<a href="http://instagram.com">
+						<i class="fab fa-instagram fa-2x"></i>
+					</a>
+				</div>
+				<div>
+					<h3>Company Info</h3>
+					<ul>
+						<li><a href="">All Products</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Get Help</h3>
+					<ul>
+						<li><a href="">Order Status</a></li>
+						<li><a href="">Shipping and Delivery</a></li>
+						<li><a href="">Returns</a></li>
+						<li><a href="">Payment Options</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Subscribe</h3>
+					<p>Get Notifications</p>
+					<form name="email-form" method="POST">
+						<div class="email-form">
+							<span class="form-control-wrap">
+								<input type="email" name="email" id="email" size="40"
+								class="form-control" placeholder="email">
+							</span>
+							<button type="submit" class="form-control submit">
+								<i class="fas fa-chevron-right"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
 
 		<script src="dist/js/main.js"></script>
 	</body>
