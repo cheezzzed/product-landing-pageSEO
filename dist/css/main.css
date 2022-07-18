@@ -135,28 +135,6 @@ table {
 
 /* 0. Breakpoints ==================================== */
 /* 1. Colors ========================================= */
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
-/* 
-If you want to add partials, use Sass Modules via @use:
-@use 'variables';
-
-Usage: partial-name.variable/mixin/function-name:
-background: variables.$primary-color;
-*/
 /* 1. Main Layout ================================= */
 * {
   box-sizing: border-box;
