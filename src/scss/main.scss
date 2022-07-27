@@ -2,7 +2,7 @@
 @use 'variables';
 @use 'mixins';
 
-/* 1. Main Layout ================================= */
+/* 1. Main Layout of Nike Website================================= */
 
 * {
 	box-sizing: border-box;
@@ -263,4 +263,223 @@ img{
 	.section-footer div:nth-child(2){
 		display: none;
 	}
+}
+
+/* 1. Contact Page Layout for Website================================= */
+
+h3{
+	font-weight: 700;
+}
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 3.125rem 6.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(/dist/img/contact-soccer-img.jpeg) no-repeat center/cover;
+}
+
+.contact .content{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .content h2{
+	font-size: 2.25rem;
+	font-weight: 500;
+	color: white;
+}
+
+.contact .content p{
+	font-weight: 500;
+	color: white;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.875rem;
+}
+
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .contactInfo .box{
+	position: relative;
+	padding: 1.25rem 0;
+	display: flex;
+}
+
+.container .contactInfo .box .icon{
+	min-height: 60px;
+	height: 3.75rem;
+	background: white;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 1.375rem;
+}
+
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 1.25rem;
+	font-size: 1rem;
+	color: white;
+	flex-direction: column;
+	font-weight: 400;
+}
+
+.container .contactInfo .box .text h3{
+	font-weight: 700;
+	color: variables.$orange;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 2.5rem;
+	background: white;
+}
+
+.contactForm h2{
+	font-size: 1.875rem;
+	color: variables.$dark-grey;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 0.625rem;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	padding: 0.313rem;
+	font-size: 1rem;
+	margin: 0.625rem 0;
+	border: none;
+	border-bottom: 2px solid variables.$dark-grey;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 0.313rem;
+	font-size: 1rem;
+	margin: 0.625rem 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: variables.$light-grey;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+	color: variables.$orange;
+	font-size: 0.75rem;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+	width: 6.25rem;
+	background: variables.$orange;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 0.625rem;
+	font-size: 1.125rem;
+}
+
+@media (max-width: 1220px){
+	.contact{
+		padding: 3.125rem;
+	}
+
+	.container{
+		flex-direction: column;
+	}
+
+	.container .contactInfo{
+		margin-bottom: 2.5rem;
+	}
+
+	.container .contactInfo,
+	.contactForm{
+		width: 100%;
+	}
+}
+
+.accordian{
+	max-width: 720px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	// border-radius: 5px;
+	overflow: hidden;
+	font-family: 'Catamaran', sans-serif;
+	background: variables.$orange;
+}
+
+
+.accordian__label,
+.accordian__content{
+	padding: 0.875rem 1.25rem;
+}
+
+.accordian__label{
+	display: block;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s;
+}
+
+.accordian__label:hover{
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.accordian__label::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 1.25rem;
+	width: 0.75rem;
+	height: 0.375rem;
+	background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+	background-size: contain;
+	transition: transform 0.4s;
+}
+
+
+.accordian__content{
+	background: white;
+	line-height: 1.6;
+	font-size: 0.85rem;
+	display: none;
+}
+
+// .accordian__input{
+// 	// display: none;
+
+// }
+
+.accordian__input:checked ~ .accordian__content{
+	display: block;
+}
+
+.accordian__input:checked ~ .accordian__label::after{
+	transform: translateY(-50%) rotate(0.5turn);
 }
