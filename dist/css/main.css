@@ -406,7 +406,7 @@ img {
     display: none;
   }
 }
-/* 1. Contact Page Layout for Website================================= */
+/* 2. Contact Page Layout for Website================================= */
 h3 {
   font-weight: 700;
 }
@@ -619,5 +619,98 @@ h3 {
 .accordian__input:checked ~ .accordian__label::after {
   -webkit-transform: translateY(-50%) rotate(0.5turn);
           transform: translateY(-50%) rotate(0.5turn);
+}
+
+/* 2. Contact Page Layout for Website================================= */
+.about-us {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.about {
+  background: url(/dist/img/about-us-pic.jpeg);
+  background-size: 48%;
+  background-repeat: no-repeat;
+  background-color: #444;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-section {
+  width: 55%;
+  float: right;
+  background-color: #333;
+  padding: 8.75rem;
+  box-shadow: 12px 12px 8px rgba(0, 0, 0, 0.3);
+}
+
+.inner-section h1 {
+  color: #FFFFFF;
+  margin-bottom: 1.875rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 0.813rem;
+  color: #FFFFFF;
+  line-height: 1.875rem;
+  text-align: justify;
+  margin-bottom: 2.5rem;
+}
+
+.skills button {
+  font-size: 1.375rem;
+  text-align: center;
+  letter-spacing: 0.125rem;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  width: 12.5rem;
+  background-color: #DF8019;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.skills button:hover {
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 120px) {
+  .inner-section {
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .about-us {
+    background-color: #333;
+    background-size: 100%;
+    padding: 6.25rem 2.5rem;
+  }
+
+  .about {
+    background-position-x: 40%;
+    background-size: cover;
+    padding: 6.25rem 2.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about {
+    padding: 0%;
+  }
+
+  .inner-section {
+    padding: 3.75rem;
+  }
+
+  .skills button {
+    font-size: 1.188rem;
+    padding: 0.313rem;
+    width: 10rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
