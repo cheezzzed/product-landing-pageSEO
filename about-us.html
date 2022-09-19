@@ -11,30 +11,119 @@
 		<link rel="stylesheet" href="dist/css/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;700;900&display=swap" rel="stylesheet">
 	</head>
 
     <body>
-        <div class="about-us">
-            <div class="about">
-                <div class="inner-section">
-                    <h1>About Us</h1>
-                    <p class="text">
-                        We champion continual progress for athletes and 
-                        sport by taking action to help athletes reach 
-                        their potential. Every job at NIKE, Inc. is 
-                        grounded in a team-first mindset, cultivating a 
-                        culture of innovation and a shared purpose to 
-                        leave an enduring impact.
+        <!-- <nav class="navbar">
+            <div class="container">
+                <a href=""><img class="logo" src="/dist/img/nike.png" alt=""></a>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <header class="header">
+			<div>
+			  <a href="#">
+				<img class="logo" src="/dist/img/nike.png" alt="">
+			  </a>
+			</div>
+			
+			<nav class="navigation">
+			  
+		  <!--     Use an invisible checkbox paired with a div to trigger the hamburger menu -->
+			  <input type="checkbox" class="toggle-menu">
+			  <div class="hamburger"></div>
+		  <!--     Alternativly, the hamburger can also be an image or ideally a pseudo element in CSS -->
+			  
+			  <ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+			  </ul>
+			</nav>
+		</header>
+
+        <section class="impact">
+            <p>Impact</p>
+            <h1>taking<br>action</h1>
+        </section>
+
+        <section class="purpose">
+            <p>
+                Our Purpose is to move the world forward. We take 
+                action by building community, protecting our 
+                planet and increasing access to sport. Learn more 
+                about our progress in our FY21 Impact Report.
+            </p>
+        </section>
+
+        <section class="report">
+            <h3>Impact Report</h3>
+            <div class="report-content">
+                <img src="/dist/img/impact.jpg" alt="">
+                <div class="report-col">
+                    <h2>FY21 NIKE, Inc. Impact Report</h2>
+                    <p>
+                        For 20 years, we’ve shared our successes and 
+                        challenges through reporting. Read about our 
+                        latest progress and where we’re going next in 
+                        our FY21 Nike Impact Report.
                     </p>
-                    <div class="skills">
-                        <button>More about us</button>
-                    </div>
                 </div>
             </div>
+        </section>
+        
+        <section class="focus">
+            <div class="focus-content">
+                <h3>Focus Areas</h3>
+                <p>
+                    Our priorities include promoting diversity, equity 
+                    and inclusion for all; advancing a transparent and 
+                    responsible supply chain; innovating sustainable 
+                    materials and methods of make that focus on our 
+                    environmental impact; building community by 
+                    investing in organizations focused on economic 
+                    empowerment, and education and equality; and 
+                    bringing today’s generation together through sport 
+                    and an active lifestyle so they can reach their 
+                    full potential tomorrow.
+                </p>
+            </div>
+        </section>
 
-            
-        </div>
+        <section class="drep">
+            <div class="drep-content">
+                <div class="drep-row">
+                    <a href="https://about.nike.com/en/impact/focus-areas/diversity-equity-inclusion">
+                        <img src="/dist/img/man.jpg" alt="">
+                        <h2>Diversity, Equity <br> & Inclusion</h2>
+                    </a>
+                </div>
+                <div class="drep-row right">
+                    <a href="https://about.nike.com/en/impact/focus-areas/responsible-sourcing">
+                        <img src="/dist/img/woman.jpg" alt="">
+                        <h2>Responsible <br> Sourcing</h2>
+                    </a>
+                </div>
+                <div class="drep-row">
+                    <a href="https://about.nike.com/en/impact/focus-areas/empowering-communities">
+                        <img src="/dist/img/group.jpg" alt="">
+                        <h2>Empowering <br> Communities</h2>
+                    </a>
+                </div>
+                <div class="drep-row right">
+                    <a href="https://about.nike.com/en/impact/focus-areas/protecting-the-planet">
+                        <img src="/dist/img/cleats.jpg" alt="">
+                        <h2>Protecting the <br> Planet</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <footer class="section-footer">
             <div class="container">
