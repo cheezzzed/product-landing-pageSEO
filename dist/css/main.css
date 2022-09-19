@@ -273,11 +273,12 @@ img {
   }
 }
 .header .navigation li a {
-  color: white;
+  color: #333;
   text-decoration: none;
   display: block;
-  padding: 40px 25px;
-  font-size: 18px;
+  padding: 40px 30px;
+  margin-right: 30px;
+  font-size: 30px;
   line-height: 1;
   transition: 300ms;
 }
